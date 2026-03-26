@@ -25,8 +25,8 @@ def example_scene():
 
     # You can add options for the player to choose from like this:
     next_scene = choose_option([
-        ('a) jumping in the lake', continuation_scene), # If you want option 1 to lead to a continuation_scene
-        ('b) keep walking', None)                # If you want option 2 to exit this scene and continue the game
+        ('jumping in the lake', continuation_scene), # If you want option 1 to lead to a continuation_scene
+        ('keep walking', None)                # If you want option 2 to exit this scene and continue the game
     ])
 
     return next_scene
@@ -38,7 +38,7 @@ def continuation_scene():
     print(f"\n...fffffffhhhhhhh, the water is super cold...")
     sleep(1.0)
 
-    example_roll = chance_roll(25) # You can use a chance roll like this, where 25 is the probability of success
+    example_roll = chance_roll(75) # You can use a chance roll like this, where 25 is the probability of success
     
     if example_roll:
         
